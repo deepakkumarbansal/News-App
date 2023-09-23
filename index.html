@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking News Loves you</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div id="navigation-tab" class="flex">
+            <a href="#" id="company-logo" onclick="reload()">
+                <img src="./assets/companylogo.png" alt="companyLogo">
+            </a>
+            <div id="nav-topics">
+                <ul class="flex">
+                    <li id="ipl" class="higlight" onclick="navSearch('ipl')">IPL</li>
+                    <li id="finance" class="higlight" onclick="navSearch('finance')">Finance</li>
+                    <li id="films" class="higlight" onclick="navSearch('films')">Films</li>
+                </ul>
+            </div>
+            <div id="search-bar">
+                <input type="search" id="search-input" placeholder="Type Science">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="card-container" class="flex">
+            
+        </div>
+    </main>
+    <template id="news-card">
+        <div id="card">
+            <img src="" alt="news-image" id="news-img">
+            <h1 id="news-title"></h1>
+            <h6 id="news-author-with-date"></h6>
+            <h6 id="description-heading">Description:<p id="description"></p></h6>
+        </div>
+    </template>
+
+    <script src="./script.js"></script>
+</body>
+</html>
